@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # driver.sh - This is a simple autograder for the Proxy Lab. It does
 #     basic sanity checks that determine whether or not the code
@@ -9,6 +9,7 @@
 # 
 #     usage: ./driver.sh
 # 
+python3 -c "import sys; f=open('driver.sh','rb'); d=f.read().replace(b'\r\n',b'\n'); f.close(); open('driver.sh','wb').write(d)"
 
 # Point values
 MAX_BASIC=40
@@ -29,7 +30,7 @@ MAX_PORT_TRIES=10
 BASIC_LIST="home.html
             csapp.c
             tiny.c
-            godzilla.jpg
+            win.jpeg
             tiny"
 
 # List of text files for the cache test

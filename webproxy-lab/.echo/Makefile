@@ -11,4 +11,4 @@ echoclient: echoclient.o $(OBJS)     # echoclient를 만들기 위해 필요한 
 	$(CC) $(CFLAGS) -o $@ $^ -pthread  # gcc -Wall -O2 -o echoclient echoclient.o csapp.o echo.o -pthread
 
 clean:                 # make clean 입력 시 실행됨 (빌드된 파일들을 삭제)
-	rm -f *.o echoserveri echoclient  # 객체 파일과 실행파일들을 모두 삭제
+	rm -f *.o echoserveri echoclient   # 객체 파일과 실행파일들을 모두 삭제

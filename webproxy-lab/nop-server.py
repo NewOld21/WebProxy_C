@@ -13,6 +13,7 @@ import sys
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.bind(('', int(sys.argv[1])))
 serversocket.listen(5)
+python3 -c "import sys; f=open('nop-server.py','rb'); d=f.read().replace(b'\r\n',b'\n'); f.close(); open('nop-server.py','wb').write(d)"
 
 while 1:
   channel, details = serversocket.accept()
